@@ -1,0 +1,156 @@
+@font-face {
+  font-family: MORVA;
+  src: url("./fonts/MORVA.ttf");
+}
+
+.search-bar {
+  margin-top: 6px;
+  padding: 6px;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  z-index: 2;
+  margin-top: 12px;
+  margin-left: -18px;
+}
+
+.logo {
+  font-size: 48px !important;
+  font-family: MORVA !important;
+}
+.container-1 {
+  border-bottom: 1px solid #000;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  list-style: none;
+  margin-right: 60px;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.link:hover {
+  color: #e83647;
+}
+
+.dropdown {
+  position: static !important;
+}
+
+.dropdown-menu {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  margin-top: 0px !important;
+  width: 90% !important;
+}
+
+/* .dropdown:hover {
+  color: #e83647 !important;
+} */
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.head-2 {
+  color: #e83647 !important;
+}
+
+Nav.Link {
+  color: #e83647 !important;
+}
+
+.navbar {
+  margin-left: 20px !important;
+}
+
+@media screen and (max-width: 576px) {
+  .logo {
+    font-size: 27px !important;
+    padding-top: 18px !important;
+  }
+  .Icon-btn {
+    margin-top: 20px !important;
+    height: 10px !important;
+    width: 10px !important;
+    padding-right: 14px !important;
+  }
+  .search-bar {
+    font-size: 8px !important;
+    width: 60px;
+    margin-left: -6px;
+    /* margin-top: -60px !important; */
+  }
+  .search-icon {
+    margin-top: 14px !important;
+    height: 15px !important;
+    width: 18px !important;
+  }
+  .link {
+    font-size: 8px !important;
+    margin-right: -28px;
+    display: inline-block;
+  }
+}
+
+/* Admin forms */
+@media only screen and (min-width: 768px) {
+  .form-main {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* manageproduct-img */
+  .mp-img {
+    margin-top: 10px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .form-main {
+    padding: 10px;
+    margin: 10px;
+  }
+  /* manageproduct-img */
+  .mp-img {
+    height: 150px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10px;
+  }
+}
+
+/* font text */
+html,
+body {
+  font-family: "Noto Sans JP", sans-serif !important;
+}
+
+input {
+  -internal-light-dark: "#000";
+}
