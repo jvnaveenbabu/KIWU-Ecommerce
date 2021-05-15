@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const NavMenu = () => {
   return (
-    <Navbar expand="lg">
+    <Navbar expand="lg" className="menu">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="d-flex justify-content-between m-auto">
@@ -15,8 +15,8 @@ const NavMenu = () => {
             href="#home"
             style={{
               color: "#000",
-              paddingRight: "15px",
-              paddingLeft: "15px",
+              paddingRight: "20px",
+              paddingLeft: "20px",
             }}
           >
             HOME
@@ -24,7 +24,7 @@ const NavMenu = () => {
 
           <Nav.Link
             href="#link"
-            style={{ color: "#000", paddingRight: "15px", paddingLeft: "15px" }}
+            style={{ color: "#000", paddingRight: "20px", paddingLeft: "20px" }}
           >
             WHAT's NEW
           </Nav.Link>
@@ -33,7 +33,7 @@ const NavMenu = () => {
             title="WOMEN"
             id="basic-nav-dropdown"
             className="navDropDown"
-            style={{ color: "#000", paddingRight: "15px", paddingLeft: "15px" }}
+            style={{ color: "#000", paddingRight: "20px", paddingLeft: "20px" }}
           >
             <div className="row">
               <div className="col-lg-3 col-3">
@@ -84,7 +84,7 @@ const NavMenu = () => {
           <NavDropdown
             title="MEN"
             id="basic-nav-dropdown"
-            style={{ color: "#000", paddingRight: "15px", paddingLeft: "15px" }}
+            style={{ color: "#000", paddingRight: "20px", paddingLeft: "20px" }}
           >
             <div className="row">
               <div className="col-lg-3 col-3">
@@ -113,20 +113,20 @@ const NavMenu = () => {
           </NavDropdown>
           <Nav.Link
             href="#link"
-            style={{ color: "#000", paddingRight: "15px", paddingLeft: "15px" }}
+            style={{ color: "#000", paddingRight: "20px", paddingLeft: "20px" }}
           >
             SALE
           </Nav.Link>
 
           <Nav.Link
             href="#link"
-            style={{ color: "#000", paddingRight: "15px", paddingLeft: "15px" }}
+            style={{ color: "#000", paddingRight: "20px", paddingLeft: "20px" }}
           >
             BRANDS
           </Nav.Link>
           <Nav.Link
             href="#link"
-            style={{ color: "#000", paddingRight: "15px", paddingLeft: "15px" }}
+            style={{ color: "#000", paddingRight: "20px", paddingLeft: "20px" }}
           >
             WEDDING EDITS
           </Nav.Link>
