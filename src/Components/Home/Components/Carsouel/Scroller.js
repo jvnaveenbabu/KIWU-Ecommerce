@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Scroller = () => {
   return (
-    <div className="container mt-4">
+    <div className="container mt-2">
       <Carousel fade>
         <Carousel.Item>
           <img
