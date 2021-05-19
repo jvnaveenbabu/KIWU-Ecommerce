@@ -36,11 +36,12 @@ const NavMenu = () => {
             style={{ color: "#000", paddingRight: "20px", paddingLeft: "20px" }}
           >
             <div className="row">
-              <div className="col-lg-3 col-3">
+              <div className="col-lg-3 col-3 offset-1">
                 <h5
                   className="pl-3 head-2"
                   style={{
                     color: "#000",
+                    marginTop: "5px",
                   }}
                 >
                   INDIAN WEAR
@@ -58,7 +59,10 @@ const NavMenu = () => {
                 <NavDropdown.Item href="#action/3.4">SKIRTS</NavDropdown.Item>
               </div>
               <div className="col-lg-3 col-3">
-                <h5 className="pl-3 head-2" style={{ color: "#000" }}>
+                <h5
+                  className="pl-3 head-2"
+                  style={{ color: "#000", marginTop: "5px" }}
+                >
                   WESTERN WEAR
                 </h5>
                 <NavDropdown.Item href="#action/3.1">DRESSES</NavDropdown.Item>
@@ -87,8 +91,11 @@ const NavMenu = () => {
             style={{ color: "#000", paddingRight: "20px", paddingLeft: "20px" }}
           >
             <div className="row">
-              <div className="col-lg-3 col-3">
-                <h5 className="pl-3 head-2" style={{ color: "#000" }}>
+              <div className="col-lg-3 col-3 offset-1">
+                <h5
+                  className="pl-3 head-2"
+                  style={{ color: "#000", marginTop: "5px" }}
+                >
                   TOP WEAR
                 </h5>
                 <NavDropdown.Item href="#action/3.1">SHIRTS</NavDropdown.Item>
@@ -100,7 +107,9 @@ const NavMenu = () => {
                 <NavDropdown.Item href="#action/3.4">SUITS</NavDropdown.Item>
               </div>
               <div className=" col-lg-3 col-3">
-                <h5 className="pl-3 head-2">BOTTOM WEAR</h5>
+                <h5 className="pl-3 head-2" style={{ marginTop: "5px" }}>
+                  BOTTOM WEAR
+                </h5>
                 <NavDropdown.Item href="#action/3.1">JEANS</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">TROUSER</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">CHINOS</NavDropdown.Item>

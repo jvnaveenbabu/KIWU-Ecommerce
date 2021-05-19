@@ -14,7 +14,7 @@ SwiperCore.use([Pagination, Navigation]);
 const Category1 = () => {
   return (
     <div className="container mt-5 mb-5">
-      <h2 className="my-2">DESIGNERS ON DISCOUNT</h2>
+      <h2 className="my-2">SHOP BY CATEGORY</h2>
       <Swiper
         slidesPerView={3}
         spaceBetween={30}

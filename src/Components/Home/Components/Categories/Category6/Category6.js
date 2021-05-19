@@ -28,28 +28,28 @@ const Category1 = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/300x350" />
+          <img src="https://source.unsplash.com/user/erondu/250x300" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/300x350" />
+          <img src="https://source.unsplash.com/user/erondu/250x300" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/300x350" />
+          <img src="https://source.unsplash.com/user/erondu/250x300" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/300x350" />
+          <img src="https://source.unsplash.com/user/erondu/250x300" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/300x350" />
+          <img src="https://source.unsplash.com/user/erondu/250x300" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/300x350" />
+          <img src="https://source.unsplash.com/user/erondu/250x300" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/300x350" />
+          <img src="https://source.unsplash.com/user/erondu/250x300" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/300x350" />
+          <img src="https://source.unsplash.com/user/erondu/250x300" />
         </SwiperSlide>
       </Swiper>
     </div>
