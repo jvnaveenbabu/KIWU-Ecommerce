@@ -3,6 +3,9 @@ import React from "react";
 const ManageCategory = () => {
   return (
     <>
+    <h2 style={{ textAlign: "center", marginBottom: "20px" }}>
+        Manage Category
+      </h2>
       <div class="container">
         <div class="row">
           <div class="col-lg-6">

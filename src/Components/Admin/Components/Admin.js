@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 
 const Admin = () => {
   var items = [
-    { cate: "Create Category", link: "/admin/create/category" },
     { cate: "Create Product", link: "/admin/create/product" },
-    { cate: "Manage Categories", link: "/admin/manage/category" },
     { cate: "Manage Products", link: "/admin/manage/product" },
   ];
   return (
@@ -21,7 +19,6 @@ const Admin = () => {
           </p>
         </div>
       </div>
-
       <div className="card">
         <h4 className="card-header">Admin Navigation</h4>
 

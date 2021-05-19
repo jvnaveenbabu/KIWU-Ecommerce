@@ -4,6 +4,8 @@ import CreateProduct from "./Components/Admin/Components/CreateProduct";
 import ManageProduct from "./Components/Admin/Components/ManageProduct";
 import AdminPage from "./Components/Admin/Screens/AdminPage";
 import HomePage from "./Components/Home/Screens/HomePage";
+import SuperAdminRoutes from "./Components/SuperAdmin/Routes/SuperAdminRoutes";
+import SuperAdminPage from "./Components/SuperAdmin/Screens/SuperAdminPage";
 
 const Routes=()=>{
   return (
@@ -14,8 +16,10 @@ const Routes=()=>{
             <HomePage />
           </Route>
           <Route path="/admin" exact><AdminPage /></Route>
+          <Route path="/superadmin" exact><SuperAdminPage /></Route>
           <Route path="/admin/create/product" exact><CreateProduct /></Route>
           <Route path="/admin/manage/product" exact><ManageProduct /></Route>
+          <SuperAdminRoutes/>
         </Switch>
       </BrowserRouter>
     </>
