@@ -4,7 +4,7 @@ import "./NavBar.css";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const NavMenu = () => {
+const NavBar = () => {
   return (
     <Navbar expand="lg" className="menu">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -145,4 +145,4 @@ const NavMenu = () => {
   );
 };
 
-export default NavMenu;
+export default NavBar;

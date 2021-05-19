@@ -1,27 +1,27 @@
 import React from "react";
 
-const CreateCategory = () => {
+const RemoveAdminByEmail = () => {
   return (
     <>
       <h2 style={{ textAlign: "center", marginBottom: "20px" }}>
-        Add Category
+        Remove Admin
       </h2>
       <form class="form-main" style={{ border: "10px solid #ff66ff" }}>
         <div class="form-group">
-          <label>Category Name</label>
+          <label>Email Adress of user</label>
           <input
             type="text"
             class="form-control"
-            placeholder="Enter Category Name"
+            placeholder="Enter Email"
           />
         </div>
 
-        <button type="submit" class="btn btn-primary">
-          Add Category
+        <button type="submit" class="btn btn-primary" style={{marginTop:"15px"}}>
+          Remove Admin Access
         </button>
       </form>
     </>
   );
 };
 
-export default CreateCategory;
+export default RemoveAdminByEmail;
