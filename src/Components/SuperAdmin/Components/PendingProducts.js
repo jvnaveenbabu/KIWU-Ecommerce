@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { GetPendingProducts } from "../superAdminThunks";
 
 const PendingProducts = () => {
+  const {pendingProducts_loading } = useSelector(state => state.superAdmin)
+  const dispatch=useDispatch();
+  useEffect(() => {
+    dispatch(GetPendingProducts());
+  
+  }, []);
   return (
     <>
     <h2 style={{textAlign:"center",marginTop:"10px",marginBottom:"15px"}}>Pending Products</h2>
