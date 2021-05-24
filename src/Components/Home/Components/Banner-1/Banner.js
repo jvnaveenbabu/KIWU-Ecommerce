@@ -6,7 +6,7 @@ const Banner = () => {
       <div className="row">
         <div className="col-lg-4 col-12">
           <img
-            src="https://source.unsplash.com/user/erondu/300x430"
+            src="https://source.unsplash.com/300x430/?fashionblog"
             alt="founder"
           />
         </div>
@@ -29,27 +29,13 @@ const Banner = () => {
           <div className="row mb-2">
             <div className="col-6">
               <img
-                src="https://source.unsplash.com/user/erondu/140x140"
+                src="https://source.unsplash.com/140x140/?creators"
                 alt="brand"
               />
             </div>
             <div className="col-6">
               <img
-                src="https://source.unsplash.com/user/erondu/140x140"
-                alt="brand"
-              />
-            </div>
-          </div>
-          <div className="row mb-2">
-            <div className="col-6">
-              <img
-                src="https://source.unsplash.com/user/erondu/140x140"
-                alt="brand"
-              />
-            </div>
-            <div className="col-6">
-              <img
-                src="https://source.unsplash.com/user/erondu/140x140"
+                src="https://source.unsplash.com/140x140/?creators"
                 alt="brand"
               />
             </div>
@@ -57,13 +43,27 @@ const Banner = () => {
           <div className="row mb-2">
             <div className="col-6">
               <img
-                src="https://source.unsplash.com/user/erondu/140x140"
+                src="https://source.unsplash.com/140x140/?creators"
                 alt="brand"
               />
             </div>
             <div className="col-6">
               <img
-                src="https://source.unsplash.com/user/erondu/140x140"
+                src="https://source.unsplash.com/140x140/?creators"
+                alt="brand"
+              />
+            </div>
+          </div>
+          <div className="row mb-2">
+            <div className="col-6">
+              <img
+                src="https://source.unsplash.com/140x140/?creators"
+                alt="brand"
+              />
+            </div>
+            <div className="col-6">
+              <img
+                src="https://source.unsplash.com/140x140/?creators"
                 alt="brand"
               />
             </div>

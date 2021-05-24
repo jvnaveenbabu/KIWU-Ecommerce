@@ -14,7 +14,9 @@ SwiperCore.use([Pagination, Navigation]);
 const Category1 = () => {
   return (
     <div className="container mt-5 mb-5">
-      <h2 className="my-2">Ethnic Clothing</h2>
+      <h2 className="my-2">
+        <b>Ethnic Clothing</b>
+      </h2>
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
@@ -28,28 +30,22 @@ const Category1 = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/250x300" />
+          <img src="https://source.unsplash.com/300x350/?ethical,clothing" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/250x300" />
+          <img src="https://source.unsplash.com/300x350/?ethical,clothing" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/250x300" />
+          <img src="https://source.unsplash.com/300x350/?ethical,clothing" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/250x300" />
+          <img src="https://source.unsplash.com/300x350/?ethical,clothing" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/250x300" />
+          <img src="https://source.unsplash.com/300x350/?ethical,clothing" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/250x300" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/250x300" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/250x300" />
+          <img src="https://source.unsplash.com/300x350/?ethical,clothing" />
         </SwiperSlide>
       </Swiper>
     </div>

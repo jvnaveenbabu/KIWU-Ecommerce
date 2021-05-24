@@ -13,7 +13,7 @@ import NavBar from "../../Navbar&Footer/Components/NavBar";
 const HomePage = () => {
   return (
     <div>
-      <NavBar/>
+      <NavBar />
       <Scroller />
       <Banner1 />
       <Category1 />
