@@ -2,11 +2,11 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import CreateProduct from "./Components/Admin/Components/CreateProduct";
 import ManageProduct from "./Components/Admin/Components/ManageProduct";
+import UpdateProduct from "./Components/Admin/Components/UpdateProduct";
 import AdminPage from "./Components/Admin/Screens/AdminPage";
 import HomePage from "./Components/Home/Screens/HomePage";
 import SuperAdminRoutes from "./Components/SuperAdmin/Routes/SuperAdminRoutes";
 import SuperAdminPage from "./Components/SuperAdmin/Screens/SuperAdminPage";
-import Form from "./Components/Auth/Screens/AuthPage";
 
 const Routes = () => {
   return (
@@ -16,6 +16,7 @@ const Routes = () => {
           <Route path="/" exact>
             <HomePage />
           </Route>
+
           <Route path="/admin" exact>
             <AdminPage />
           </Route>
@@ -28,8 +29,8 @@ const Routes = () => {
           <Route path="/admin/manage/product" exact>
             <ManageProduct />
           </Route>
-          <Route path="/form" exact>
-            <Form />
+          <Route path="/admin/edit/product/:id" exact>
+            <UpdateProduct />
           </Route>
           <SuperAdminRoutes />
         </Switch>

@@ -62,9 +62,6 @@ li {
   width: 90% !important;
 }
 
-/* .dropdown:hover {
-  color: #e83647 !important;
-} */
 
 .dropdown:hover > .dropdown-menu {
   display: block;
@@ -143,6 +140,11 @@ Nav.Link {
     margin-right: 20%;
     margin-top: 10px;
   }
+}
+
+.admin-form-pad
+{
+  margin-bottom: 10px;
 }
 
 /* font text */

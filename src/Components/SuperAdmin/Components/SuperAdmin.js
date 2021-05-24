@@ -27,9 +27,9 @@ const SuperAdmin=()=>{
             
          
             <div className="card">
-                <h4 className="card-header">
+                <h3 className="card-header">
                    Product Navigation
-                </h4>
+                </h3>
             
                 <div class="row" >
                     {

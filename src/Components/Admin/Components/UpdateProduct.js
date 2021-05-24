@@ -1,51 +1,55 @@
-import React, { useState } from "react";
-import { AddProduct } from "../adminThunks";
-import { useDispatch, useSelector } from "react-redux"
-
-
-const CreateProduct = () => {
-  const dispatch = useDispatch()
-
-  const { addproduct_loading,addproduct_error} = useSelector(state => state.adminProduct)
-
+import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { useHistory, useParams } from "react-router";
+import {useLocation } from "react-router-dom";
+import {EditProduct} from "../adminThunks"
+const UpdateProduct = () => {
+  const dispatch=useDispatch();
+  const history=useHistory();
+  const location = useLocation()
   const [product, setProduct] = useState({
+    id:"",
     name: "",
     description: "",
     price: "",
     countInStock: "",
     image: "",
     brand: "",
-    category: "",
+    category: ""
   });
 
   const { name, description, price, countInStock, image, category, brand } = product;
+  useEffect(()=>{
+    let editProduct = location.state === undefined ? '' : location.state.editProduct
 
+    setProduct({...product,
+      id:editProduct._id,
+      name:editProduct.name,
+      description:editProduct.description,
+      price:editProduct.price,
+      countInStock:editProduct.countInStock,
+      image:editProduct.image,
+      brand: editProduct.brand,
+      category:editProduct.category
+    })
+  },[])
   const handleChange = (item) => (event) => {
     if (item == "image") {
-      setProduct({ ...product, [item]:URL.createObjectURL(event.target.files[0]) });
+      setProduct({ ...product, [item]: event.target.files[0] });
     } else {
       setProduct({ ...product, [item]: event.target.value });
     }
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(AddProduct(product));
+    dispatch(EditProduct(product))
+    history.push("/admin/manage/product")
     console.log("product", product);
-    console.log(addproduct_error);
-    console.log(addproduct_loading);
   };
 
   return (
     <>
-    {
-      (addproduct_loading==true)?(
-        <>Loading..</>
-      ):(
-        <>Npot Loading..</>
-  
-      )
-    }
-      <h2 style={{ textAlign: "center", marginBottom: "20px" }}>Add Product</h2>
+      <h2 style={{ textAlign: "center", marginBottom: "20px" }}>Update Product</h2>
       <form
         class="form-main"
         style={{ border: "10px solid #ff66ff" }}
@@ -72,17 +76,6 @@ const CreateProduct = () => {
             placeholder="Enter Product Name"
             value={name}
             onChange={handleChange("name")}
-          />
-        </div>
-
-        <div className="form-group admin-form-pad">
-          <label>Brand Name</label>
-          <input
-            type="text"
-            className="form-control"
-            placeholder="Enter Product Name"
-            value={brand}
-            onChange={handleChange("brand")}
           />
         </div>
 
@@ -135,20 +128,12 @@ const CreateProduct = () => {
           />
         </div>
 
-        <button type="submit" className="btn btn-primary">
-          Add Product
+        <button type="submit" class="btn btn-primary">
+          Update Product
         </button>
       </form>
-      {
-      (addproduct_error)?(
-        <>Loading..</>
-      ):(
-        <>Npot Loading..</>
-  
-      )
-    }
     </>
   );
 };
 
-export default CreateProduct;
+export default UpdateProduct;
