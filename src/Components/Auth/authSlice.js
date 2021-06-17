@@ -1,3 +1,4 @@
+// AuthSlice
 import { createSlice } from "@reduxjs/toolkit";
 import { login, logout, register } from "./authThunks.js";
 

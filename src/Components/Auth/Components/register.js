@@ -1,3 +1,4 @@
+// Register Page
 import React from 'react';
 import loginImg from '../../../login.svg';
 
