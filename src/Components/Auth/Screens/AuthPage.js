@@ -1,4 +1,4 @@
-// Login and Signup Both Page
+
 import React from 'react';
 import './AuthPage.scss';
 import 'bootstrap/dist/css/bootstrap.css';
