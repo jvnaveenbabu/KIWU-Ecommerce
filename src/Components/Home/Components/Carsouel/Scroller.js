@@ -9,7 +9,7 @@ const Scroller = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://source.unsplash.com/user/erondu/800x400"
+            src="https://source.unsplash.com/800x400/?fashion,creative"
             alt="First slide"
           />
           <Carousel.Caption>
@@ -19,7 +19,7 @@ const Scroller = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://source.unsplash.com/user/erondu/800x400"
+            src="https://source.unsplash.com/800x400/?dresses"
             alt="Second slide"
           />
 
@@ -30,7 +30,7 @@ const Scroller = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://source.unsplash.com/user/erondu/800x400"
+            src="https://source.unsplash.com/800x400/?wedding,boy"
             alt="Third slide"
           />
           <Carousel.Caption>

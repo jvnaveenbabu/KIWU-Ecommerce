@@ -15,7 +15,9 @@ SwiperCore.use([Pagination, Navigation]);
 const Category1 = () => {
   return (
     <div className="container mt-5 mb-5">
-      <h2 className="my-2">MENS WEAR</h2>
+      <h2 className="my-2">
+        <b>MENS WEAR</b>
+      </h2>
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
@@ -29,28 +31,22 @@ const Category1 = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/300x350" />
+          <img src="https://source.unsplash.com/300x350/?tshirts" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/300x350" />
+          <img src="https://source.unsplash.com/300x350/?tshirts" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/300x350" />
+          <img src="https://source.unsplash.com/300x350/?tshirts" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/300x350" />
+          <img src="https://source.unsplash.com/300x350/?tshirts" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/300x350" />
+          <img src="https://source.unsplash.com/300x350/?tshirts" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/300x350" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/300x350" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://source.unsplash.com/user/erondu/300x350" />
+          <img src="https://source.unsplash.com/300x350/?tshirts" />
         </SwiperSlide>
       </Swiper>
     </div>
