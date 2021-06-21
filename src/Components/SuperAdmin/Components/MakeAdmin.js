@@ -6,7 +6,7 @@ const MakeAdminByEmail = () => {
       <h2 style={{ textAlign: "center", marginBottom: "20px" }}>
         Make Admin
       </h2>
-      <form class="form-main" style={{ border: "10px solid #ff66ff" }}>
+      <form class="form-main" style={{ border: "10px solid #353839" }}>
         <div class="form-group">
           <label>Email Adress of user</label>
           <input

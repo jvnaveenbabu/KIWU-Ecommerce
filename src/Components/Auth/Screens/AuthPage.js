@@ -27,8 +27,8 @@ class AuthPage extends React.Component {
 
   render() {
     const { isLogginActive } = this.state;
-    const current = isLogginActive ? "Register" : "login";
-    const currentActive = isLogginActive ? "login" : "register";
+    const current = isLogginActive ? "Register" : "Login";
+    const currentActive = isLogginActive ? "Login" : "register";
     return (
       <div className="App">
         <div className="login" >
@@ -45,11 +45,16 @@ class AuthPage extends React.Component {
 
 
 const RightSide = props => {
-  return <div className="right-side" ref={props.containerRef} onClick={props.onClick}>
-    <div className="inner-container">
-      <div className="text">{props.current}</div>
+ if(props.current)
+  {
+    return (
+      <div className="right-side" ref={props.containerRef} onClick={props.onClick}>
+      <div className="inner-container">
+          <div className="text">{props.current}</div>
+      </div>
     </div>
-  </div>
+    )
+  }
 }
 
 export default AuthPage;

@@ -33,7 +33,7 @@ const ManageProduct = () => {
               <div class="row">
                 <div class="col-lg-6 mb-4">
                   <img
-                    src="https://www.w3schools.com/colors/img_colormap.gif"
+                    src="https://in.pinterest.com/pin/688910074241038531/"
                     className="mp-img"
                     alt="img"
                   />
@@ -77,6 +77,86 @@ const ManageProduct = () => {
                 ))):(<></>)
 
           }
+
+        <div class="col-lg-6 mb-4">
+            <div class="card">
+              <div class="row">
+                <div class="col-lg-6 mb-4">
+                  <img
+                    src="https://i.ibb.co/MGntWDm/b2e4f9cf641093d8987a91bc7f4d4e30.jpg"
+                    className="mp-img"
+                    alt="img"
+                  />
+                </div>
+                <div class="col-lg-6 mb-4">
+                  <div class="card-body">
+                    <h5 class="card-title">Kurti</h5>
+                    <p class="card-text">
+                      Kurti Design
+                    </p>
+                    <p class="card-text">Party Wear</p>
+                    <p class="card-text"><b>Price:RS.</b>4500</p>
+                    <p class="card-text"><b>Stock:</b>20</p>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                class="btn btn-info"
+                style={{ fontSize: "15px", marginTop: "4px" }}
+              >
+                Edit
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                style={{ fontSize: "15px", marginTop: "4px" }}
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4" >
+            <div class="card">
+              <div class="row">
+                <div class="col-lg-6 mb-4">
+                  <img
+                    src="https://i.ibb.co/MGntWDm/b2e4f9cf641093d8987a91bc7f4d4e30.jpg"
+                    className="mp-img"
+                    alt="img"
+                  />
+                </div>
+                <div class="col-lg-6 mb-4">
+                  <div class="card-body">
+                    <h5 class="card-title">Dress</h5>
+                    <p class="card-text">
+                      Cotton Wear
+                    </p>
+                    <p class="card-text">Summer Wear</p>
+                    <p class="card-text"><b>Price: Rs.</b>2000</p>
+                    <p class="card-text"><b>Stock:</b>42</p>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                class="btn btn-info"
+                style={{ fontSize: "15px", marginTop: "4px" }}
+              >
+                Edit
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                style={{ fontSize: "15px", marginTop: "4px" }}
+              >
+                Delete
+              </button>
+            </div>
+          </div>
           
         </div>
       </div>

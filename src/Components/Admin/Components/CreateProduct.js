@@ -14,11 +14,11 @@ const CreateProduct = () => {
     price: "",
     countInStock: "",
     image: "",
-    brand: "",
+    designer: "",
     category: "",
   });
 
-  const { name, description, price, countInStock, image, category, brand } = product;
+  const { name, description, price, countInStock, image, category, designer } = product;
 
   const handleChange = (item) => (event) => {
     if (item == "image") {
@@ -29,6 +29,7 @@ const CreateProduct = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(product)
     dispatch(AddProduct(product));
     console.log("product", product);
     console.log(addproduct_error);
@@ -36,23 +37,28 @@ const CreateProduct = () => {
   };
 
   return (
-    <>
-    {
+    <div>
+    {/* {
       (addproduct_loading==true)?(
         <>Loading..</>
       ):(
         <>Npot Loading..</>
   
       )
-    }
-      <h2 style={{ textAlign: "center", marginBottom: "20px" }}>Add Product</h2>
+    } */}
+      <h2 style={{ textAlign: "center", marginBottom: "20px"}}>Add Product</h2>
+      <div class="container" 
+        style={{ borderRadius:"20px" }}
+        >
       <form
         class="form-main"
-        style={{ border: "10px solid #ff66ff" }}
+        style={{
+           border: "10px solid #353839",
+       }}
         onSubmit={(e) => handleSubmit(e)}
       >
         <div className="form-group admin-form-pad">
-          <label for="image1" style={{ marginRight: "10px" }}>
+          <label for="image1" style={{ marginRight: "10px"}}>
             Product Image
           </label>
           <br />
@@ -61,6 +67,7 @@ const CreateProduct = () => {
             name="image"
             multiple={false}
             onChange={handleChange("image")}
+            style={{width:"90%"}}
           />
         </div>
 
@@ -81,8 +88,8 @@ const CreateProduct = () => {
             type="text"
             className="form-control"
             placeholder="Enter Product Name"
-            value={brand}
-            onChange={handleChange("brand")}
+            value={designer}
+            onChange={handleChange("designer")}
           />
         </div>
 
@@ -139,15 +146,16 @@ const CreateProduct = () => {
           Add Product
         </button>
       </form>
-      {
+      </div>
+      {/* {
       (addproduct_error)?(
         <>Loading..</>
       ):(
         <>Npot Loading..</>
   
       )
-    }
-    </>
+    } */}
+    </div>
   );
 };
 

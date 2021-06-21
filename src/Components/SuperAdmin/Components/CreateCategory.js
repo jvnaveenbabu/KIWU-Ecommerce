@@ -7,7 +7,7 @@ const CreateCategory = () => {
       <h2 style={{ textAlign: "center", marginBottom: "20px" }}>
         Add Category
       </h2>
-      <form class="form-main" style={{ border: "10px solid #ff66ff" }}>
+      <form class="form-main" style={{ border: "10px solid #353839" }}>
         <div class="form-group">
           <label>Category Name</label>
           <input
