@@ -7,7 +7,7 @@ const DeleteAdminById = () => {
         Delete Admin
       </h2>
       <h6 style={{ textAlign: "center"}}>It removes admiin access and delete the user account</h6>
-      <form class="form-main" style={{ border: "10px solid #ff66ff" }}>
+      <form class="form-main" style={{ border: "10px solid #353839" }}>
         <div class="form-group">
           <label>User Id</label>
           <input

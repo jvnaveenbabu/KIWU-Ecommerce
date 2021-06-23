@@ -36,6 +36,8 @@ const authSlice = createSlice({
       state.login_loading = false;
     },
     [login.rejected]: (state, { payload }) => {
+      console.log(payload)
+
       state.login_error = payload;
       state.login_loading = false;
     },

@@ -7,20 +7,29 @@ const Admin = () => {
     { cate: "Manage Products", link: "/admin/manage/product" },
   ];
   return (
-    <div className="container p-4" style={{ backgroundColor: "#ffe6f2" }}>
-      <div className="container-fluid">
+    <div className="container p-4" style={{
+           border: "10px solid #353839",
+           marginTop:"10px",
+           
+       }}>
+      <div >
         <div
-          className="jumbotron text-white text-center"
-          style={{ backgroundColor: "#ff99cc" }}
+          className="jumbotron text-center text-white"
+          style={{ fontWeight:"20000px",
+            backgroundColor:"#353839",
+            paddingTop:"20px",
+            paddingBottom:"20px",
+            marginBottom:"20px"
+          }}
         >
-          <h2 className="display-4 logo">Welcome to Admin area</h2>
+          <h2 className="display-4 logo" style={{fontWeight:"20000px"}}>Welcome to Admin area</h2>
           <p className="lead">
             <b>Manage all your Products here</b>
           </p>
         </div>
       </div>
       <div className="card">
-        <h4 className="card-header">Admin Navigation</h4>
+        <h3 className="card-header">Admin Navigation</h3>
 
         <div class="row">
           {items.map((item) => {
@@ -29,7 +38,7 @@ const Admin = () => {
                 <div class="card">
                   <div class="card-body">
                     <h5 class="card-title">
-                      <Link to={item.link} style={{ color: "#FF69B4" }}>
+                      <Link to={item.link} style={{color:"#353839",textDecoration:"none" }}>
                         <b>{item.cate}</b>
                       </Link>
                     </h5>

@@ -1,35 +1,56 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import loginImg from '../../../login.svg';
+import { login } from '../authThunks';
 
 
-export class Login extends React.Component {
+export const Login=()=> {
+    const dispatch = useDispatch()
 
-    constructor(props) {
-        super(props);
-    }
+    const {   login_loading,login_error} = useSelector(state => state.auth)
 
-    render() {
-        return <div className="base-container" ref="this.props.containerRef">
+    const [user,setUser]=useState({
+        email:"",
+        password:""
+    });
+
+    const {email,password}=user;
+
+    const handleChange = (item) => (event) => {
+        setUser({ ...user, [item]: event.target.value });
+      };
+
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        dispatch(login(user))
+        setUser({...user,email:"",password:""})
+        // dispatch(AddProduct(product));
+      };
+
+        return( 
+        <div className="base-container" >
                 <div className="header">Login</div>
                 <div className="content">
                     <div className="image">
                         <img src={loginImg} />
                     </div>
-                    <div className="form">
-                        <div className="form-group">
-                            <label htmlFor="username">Username</label>
-                            <input type="text" name="username" placeholder="Enter your Username"/>
+                    <form onSubmit={handleSubmit}>
+                        <div className="form" >
+                            <div className="form-group">
+                                <label htmlFor="email">Email</label>
+                                <input type="email" name="email" placeholder="Enter your Email" value={email} onChange={handleChange("email")}/>
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="password">Password</label>
+                                <input type="password" name="password" placeholder="Enter your Password" value={password} onChange={handleChange("password")}/>
+                            <div >
+                                <button type="button" className="btn" type="submit"> Login </button>
+                             </div>
+                            </div>
                         </div>
-                        <div className="form-group">
-                            <label htmlFor="password">Password</label>
-                            <input type="password" name="password" placeholder="Enter your Password"/>
-                        </div>
-                    </div>
+                    </form>
                 </div>
-                <div className="footer">
-                    <button type="button" className="btn"> Login </button>
-                </div>
+                
             </div>
-    }
-
+    )
 }

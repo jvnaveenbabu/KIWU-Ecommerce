@@ -14,11 +14,10 @@ function App() {
   return (
     <>
     <Provider store={store}>
-      <NavMenu/>
+      {/* <NavMenu/> */}
       <ToastContainer />
       <Routes />
       </Provider>
-      <AuthPage />
     </>
   );
 }

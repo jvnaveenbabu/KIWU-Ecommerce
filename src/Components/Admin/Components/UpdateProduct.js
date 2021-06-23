@@ -65,6 +65,7 @@ const UpdateProduct = () => {
             name="image"
             multiple={false}
             onChange={handleChange("image")}
+            style={{width:"90%"}}
           />
         </div>
 

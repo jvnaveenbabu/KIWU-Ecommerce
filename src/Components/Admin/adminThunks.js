@@ -3,11 +3,12 @@ import { createAsyncThunk } from "@reduxjs/toolkit"
 
 export const AddProduct = createAsyncThunk(
   "adminProduct/AddProduct",
-  async ({ name, description, image,brand,category,price,countInStock }) =>
+  async ({ name, description, image,designer,category,price,countInStock }) =>
     (
       await axios.post(
-        "/products",
-        { name, description, image,brand,category,price,countInStock }
+        "/products/",
+        { name, description, image,designer,category,price,countInStock },
+        { withCredentials: true }
       )
     ).data
 )
